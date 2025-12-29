@@ -1,0 +1,163 @@
+/* Mobile Devices (max-width: 600px) */
+@media (max-width: 600px) {
+    .postWrapper {
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+        min-height: 11.5rem;
+        flex-flow: row nowrap;
+        justify-content: space-between;
+        align-items: stretch;
+        background: linear-gradient(178.17deg, #FF979A 1.42%, #CF6F72 98.33%);
+        margin-bottom: 0;
+    }
+
+    .leftInfo {
+        width: 35%;
+        /* Same proportion as desktop */
+        height: auto;
+        display: flex;
+    }
+
+    .leftInfo img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
+    }
+
+    .rigthInfo {
+        flex-flow: column wrap;
+        width: 60%;
+        /* Same proportion as desktop */
+        height: auto;
+        padding: 1rem;
+        padding-right: 0.5rem;
+        justify-content: center;
+        align-items: flex-start;
+        display: flex;
+    }
+
+    .rigthInfo h2 {
+        text-align: left;
+        margin-bottom: 0.5rem;
+        font-size: 1rem;
+        color: white;
+        line-height: 1.4;
+    }
+
+    .rigthInfo p {
+        color: white;
+        margin-bottom: 0.5rem;
+        font-size: 0.75rem;
+        line-height: 1.3;
+    }
+
+    .rigthInfo button {
+        background-color: #402864;
+        color: white;
+        height: 2rem;
+        width: 6rem;
+        font-size: 0.75rem;
+    }
+}
+
+/* Tablet Devices (601px - 1000px) */
+@media (min-width: 601px) and (max-width: 1000px) {
+    .postWrapper {
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+        min-height: 11.5rem;
+        flex-flow: row nowrap;
+        justify-content: space-between;
+        align-items: stretch;
+        background: linear-gradient(178.17deg, #FF979A 1.42%, #CF6F72 98.33%);
+        margin-bottom: 0;
+    }
+
+    .leftInfo {
+        width: 35%;
+        /* Same proportion as desktop */
+        height: auto;
+        display: flex;
+    }
+
+    .leftInfo img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
+    }
+
+    .rigthInfo {
+        flex-flow: column wrap;
+        width: 60%;
+        /* Same proportion as desktop */
+        height: auto;
+        padding: 1.5rem;
+        padding-right: 1rem;
+        justify-content: center;
+        align-items: flex-start;
+        display: flex;
+    }
+
+    .rigthInfo h2 {
+        text-align: left;
+        margin-bottom: 0.8rem;
+        font-size: 1.3rem;
+        color: white;
+        line-height: 1.5;
+    }
+
+    .rigthInfo p {
+        color: white;
+        margin-bottom: 0.8rem;
+        font-size: 0.9rem;
+        line-height: 1.4;
+    }
+
+    .rigthInfo button {
+        background-color: #402864;
+        color: white;
+        height: 2.3rem;
+        width: 6.5rem;
+        font-size: 0.85rem;
+    }
+}
+
+/* Small Desktop (1001px - 1200px) */
+@media (min-width: 1001px) and (max-width: 1200px) {
+    .postWrapper {
+        width: 48%;
+        height: 11.5rem;
+        flex-flow: row nowrap;
+        justify-content: space-between;
+        background: linear-gradient(178.17deg, #FF979A 1.42%, #CF6F72 98.33%);
+        margin-bottom: 0;
+    }
+
+    .leftInfo {
+        width: 35%;
+        height: 100%;
+    }
+
+    .rigthInfo {
+        width: 60%;
+        height: 100%;
+        padding: 1rem;
+        padding-right: 1rem;
+    }
+
+    .rigthInfo h2 {
+        text-align: left;
+        margin-bottom: 0.8rem;
+        font-size: 1.2rem;
+    }
+
+    .rigthInfo button {
+        background-color: #402864;
+        color: white;
+        height: 2.3rem;
+    }
+}

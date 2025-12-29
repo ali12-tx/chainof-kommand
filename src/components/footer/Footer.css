@@ -1,0 +1,45 @@
+.footerHead {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 0;
+  padding: 0;
+}
+
+.footer {
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  height: 5rem;
+}
+
+.leftContent {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+.rigthContent {
+  display: flex;
+  justify-content: center;
+  gap: 0;
+}
+
+/* .rigthContent p a {
+  color: #211f24;
+  text-decoration: none;
+  font-weight: 400;
+ 
+} */
+
+.rigthContent p a{
+  color: #211f24;
+  font-weight: 400;
+  text-decoration: none;
+  margin: 0 12px;
+}

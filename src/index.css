@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'Popins';
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: white;
+  overflow-x: hidden;
+}
+
+h2 {
+  font-family: 'Poppins';
+  font-weight: 600;
+}
+
+p {
+  font-family: 'Poppins';
+  font-weight: 300;
+}
+
+button {
+  font-family: 'Poppins';
+  font-weight: 400;
+}

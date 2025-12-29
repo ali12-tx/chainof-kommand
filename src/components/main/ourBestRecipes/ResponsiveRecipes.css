@@ -1,0 +1,99 @@
+/* Mobile Devices (max-width: 600px) */
+@media (max-width: 600px) {
+    .bRecipes {
+        background-color: transparent;
+        width: 100%;
+        min-height: auto;
+        align-items: center;
+        padding: 2rem 0;
+    }
+
+    .recipes {
+        width: 95%;
+    }
+
+    .recipe-posts {
+        flex-direction: column;
+        justify-content: flex-start;
+        height: auto;
+        width: 100%;
+        gap: 1.5rem;
+    }
+
+    .infos {
+        margin-bottom: 2rem;
+    }
+
+    .infos h2 {
+        color: rgb(3, 3, 82);
+        font-size: 1.5rem;
+        text-align: center;
+    }
+
+    .infos p {
+        text-align: center;
+        margin-left: 0;
+        font-size: 1rem;
+    }
+}
+
+/* Tablet Devices (601px - 1000px) */
+@media (min-width: 601px) and (max-width: 1000px) {
+    .bRecipes {
+        background-color: transparent;
+        width: 100%;
+        min-height: auto;
+        align-items: center;
+        padding: 2.5rem 0;
+    }
+
+    .recipes {
+        width: 90%;
+    }
+
+    .recipe-posts {
+        flex-direction: column;
+        justify-content: flex-start;
+        height: auto;
+        width: 100%;
+        gap: 2rem;
+    }
+
+    .infos {
+        margin-bottom: 2.5rem;
+    }
+
+    .infos h2 {
+        color: rgb(3, 3, 82);
+        font-size: 1.8rem;
+        text-align: center;
+    }
+
+    .infos p {
+        text-align: center;
+        margin-left: 0;
+        font-size: 1.2rem;
+    }
+}
+
+/* Small Desktop (1001px - 1200px) */
+@media (min-width: 1001px) and (max-width: 1200px) {
+    .bRecipes {
+        background-color: transparent;
+        width: 100%;
+        min-height: auto;
+        align-items: center;
+    }
+
+    .recipe-posts {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        height: auto;
+        gap: 1.5rem;
+    }
+
+    .infos h2 {
+        color: rgb(3, 3, 82);
+    }
+}

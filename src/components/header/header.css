@@ -1,0 +1,148 @@
+header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  padding: 1rem;
+  z-index: 100;
+}
+
+.logo img {
+  width: 7rem;
+}
+
+.wraper {
+  width: 85%;
+  height: 5.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  display: flex;
+}
+
+.logo h1 {
+  background: linear-gradient(178.17deg, #FF979A 1.42%, #CF6F72 98.33%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  font-size: 2rem;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 45%;
+  color: white;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 80%;
+}
+
+li {
+  font-size: .8rem;
+}
+
+.mainBtn {
+  border: none;
+  height: 31px;
+  padding: 0 1.5rem;
+  border-radius: 12px;
+  color: #402864;
+  background-color: #FFFFFF;
+  font-size: .8rem;
+  font-weight: 500;
+  cursor: pointer;
+  font-family: 'Poppins';
+  transition: all 0.3s ease;
+}
+
+.mainBtn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(64, 40, 100, 0.2);
+}
+
+.mainBtn.active {
+  background-color: #402864;
+  color: #FFFFFF;
+}
+
+.mainBtn:active {
+  transform: translateY(0);
+}
+
+.secondaryBtn {
+  border: none;
+  height: 31px;
+  padding: 0 1.5rem;
+  border-radius: 12px;
+  color: #402864;
+  background-color: #FFFFFF;
+  font-size: .8rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.secondaryBtn:hover {
+  /* transform: translateY(-2px); */
+  box-shadow: 0 4px 12px rgba(64, 40, 100, 0.2);
+}
+
+.secondaryBtn.active {
+  background-color: #402864;
+  color: #FFFFFF;
+}
+
+.secondaryBtn:active {
+  transform: translateY(0);
+}
+
+a {
+  text-decoration: none;
+  color: white;
+  transition: all 0.6s;
+}
+
+a:hover {
+  color: rgb(3, 3, 82);
+  border-bottom: 1px solid rgb(3, 3, 82);
+}
+
+.modal {
+  display: flex;
+  flex-flow: column;
+  justify-content: space-between;
+  align-items: center;
+  height: 14rem;
+  text-align: center;
+}
+
+.modal input {
+  height: 2rem;
+  width: 90%;
+}
+
+.modalBtn {
+  width: 80%;
+  background: linear-gradient(178.17deg, #FF979A 1.42%, #CF6F72 98.33%);
+  color: white;
+  cursor: pointer;
+  transition: all ease .8s;
+}
+
+.modalBtn:hover {
+  background-color: #639143;
+}

@@ -1,0 +1,269 @@
+/* Ensure column layout for all non-desktop screens */
+@media all and (max-width: 1200px) {
+  .HeroSec {
+    flex-direction: column !important;
+  }
+
+  .heroImageWrapper {
+    width: 100% !important;
+    order: 1;
+    /* Image first on mobile/tablet */
+    clip-path: none;
+    /* Remove slant on mobile/tablet */
+  }
+
+  .contentWrapper {
+    width: 100% !important;
+    order: 2;
+    /* Content second on mobile/tablet */
+  }
+}
+
+/* Mobile Devices (max-width: 600px) */
+@media all and (max-width: 600px) {
+  .HeroSec {
+    align-items: center;
+    margin-top: 0;
+  }
+
+  .heroImageWrapper {
+    width: 100%;
+  }
+
+  .heroImg img,
+  .heroImg video {
+    width: 100%;
+    height: 85vh;
+    min-height: 420px;
+    object-fit: cover;
+  }
+
+  /* Remove dark overlay from native controls at the bottom */
+  .heroImg video::-webkit-media-controls,
+  .heroImg video::-webkit-media-controls-enclosure,
+  .heroImg video::-webkit-media-controls-panel {
+    background: transparent !important;
+  }
+}
+
+@media all and (max-width: 600px) {
+  .contentWrapper {
+    padding: 0 1rem 2rem 1rem;
+    min-height: auto;
+  }
+
+  .leftContent {
+    width: 100%;
+    padding: 0;
+  }
+
+  .leftContent h2 {
+    color: rgb(3, 3, 82) !important;
+    width: 100%;
+    text-align: left;
+    font-size: 1.5rem !important;
+    line-height: 1.4;
+  }
+
+  .handle {
+    margin-top: 2rem;
+    justify-content: center;
+    flex-direction: row;
+    gap: 0.5rem;
+    align-items: center;
+  }
+
+  .handle input {
+    width: 100%;
+    max-width: none;
+    flex: 1;
+    height: 2.5rem;
+    font-size: 0.875rem;
+    color: #CF6F72 !important;
+    background-color: #fff;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+  }
+
+  .handle input::placeholder {
+    color: #402864 !important;
+  }
+
+  .handle button {
+    width: 2.5rem;
+    height: 2.5rem;
+    margin-left: 0;
+    flex-shrink: 0;
+  }
+}
+/* Small phones (<=400px) */
+@media all and (max-width: 400px) {
+  .heroImageWrapper {
+    width: 100% !important;
+    clip-path: none !important;
+    margin: 0;
+    padding: 0;
+    position: relative;
+  }
+
+  .heroImageWrapper::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 25%;
+    background: linear-gradient(to bottom, #000 0%, rgba(0,0,0,0.6) 60%, rgba(0,0,0,0) 100%);
+    z-index: 2;
+    pointer-events: none;
+  }
+
+  .heroImg {
+    width: 100%;
+    height: auto !important;
+    margin: 0;
+    padding: 0;
+  }
+
+  .heroImg img,
+  .heroImg video {
+    width: 100% !important;
+    max-width: 100% !important;
+    height: 75vh !important;
+    min-height: 0 !important;
+    object-fit: contain !important;
+    object-position: center center;
+    display: block;
+    margin: 0 auto;
+    background-color: transparent;
+  }
+
+  .heroImg video::-webkit-media-controls,
+  .heroImg video::-webkit-media-controls-enclosure,
+  .heroImg video::-webkit-media-controls-panel {
+    background: transparent !important;
+  }
+}
+
+/* Ultra-small phones (<=330px) */
+@media all and (max-width: 330px) {
+  .heroImageWrapper {
+    clip-path: none !important;
+    padding: 0;
+    position: relative;
+  }
+
+  .heroImageWrapper::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 25%;
+    background: linear-gradient(to bottom, #000 0%, rgba(0,0,0,0.6) 60%, rgba(0,0,0,0) 100%);
+    z-index: 2;
+    pointer-events: none;
+  }
+
+  .heroImg {
+    width: 100%;
+    height: auto !important;
+  }
+
+  .heroImg img,
+  .heroImg video {
+    width: 100% !important;
+    max-width: 100% !important;
+    height: auto !important;
+    aspect-ratio: 16 / 9;
+    min-height: 0 !important;
+    object-fit: contain !important;
+    display: block;
+    margin: 0 auto;
+    background-color: transparent;
+  }
+
+  .heroImg video::-webkit-media-controls,
+  .heroImg video::-webkit-media-controls-enclosure,
+  .heroImg video::-webkit-media-controls-panel {
+    background: transparent !important;
+  }
+}
+
+/* Tablet Devices (601px - 1000px) */
+@media all and (min-width: 601px) and (max-width: 1000px) {
+  .HeroSec {
+    align-items: center;
+    margin-top: 0;
+  }
+
+  .heroImageWrapper {
+    width: 100%;
+  }
+
+  .heroImg img,
+  .heroImg video {
+    width: 100%;
+    height: 80vh;
+    min-height: 520px;
+    object-fit: cover;
+  }
+
+  .contentWrapper {
+    padding: 0 2rem 3rem 2rem;
+    min-height: auto;
+  }
+
+  .leftContent {
+    width: 100%;
+    padding: 0;
+    max-width: 600px;
+    margin: 0 auto;
+  }
+
+  .leftContent h2 {
+    color: rgb(3, 3, 82) !important;
+    width: 100%;
+    text-align: left;
+    font-size: 2rem !important;
+    line-height: 1.4;
+  }
+
+  .handle {
+    margin-top: 2rem;
+    justify-content: center;
+    flex-direction: row;
+    gap: 1rem;
+    align-items: center;
+  }
+
+  .handle input {
+    width: 70%;
+    max-width: 400px;
+    height: 3rem;
+    font-size: 1rem;
+    color: #CF6F72 !important;
+    background-color: #fff;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+  }
+
+  .handle input::placeholder {
+    color: #402864 !important;
+  }
+
+  .handle button {
+    width: 3rem;
+    height: 3rem;
+    flex-shrink: 0;
+  }
+}
+
+/* Small Desktop (1001px - 1200px) */
+@media all and (min-width: 1001px) and (max-width: 1200px) {
+  .contentWrapper {
+    width: 90%;
+  }
+
+  .leftContent h2 {
+    font-size: 2.5rem !important;
+  }
+}

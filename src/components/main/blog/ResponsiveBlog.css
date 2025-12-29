@@ -1,0 +1,58 @@
+/* Mobile Devices (max-width: 600px) */
+@media all and (max-width: 600px) {
+    .blog {
+        background-color: transparent;
+        /* Removed yellow background */
+        height: auto;
+        /* Changed from fixed height */
+        align-content: center;
+        justify-content: flex-start;
+        margin-bottom: 4rem;
+        /* Added margin from bottom */
+        padding: 2rem 0;
+    }
+
+    .postBtn {
+        display: none;
+    }
+
+    .postsWrapper {
+        align-items: center;
+        justify-content: center;
+        flex-flow: column nowrap;
+        gap: 2rem;
+    }
+
+    .PostBlog {
+        margin: 0;
+    }
+
+    .topInfo h2 {
+        color: rgb(3, 3, 82);
+        /* Reset color to dark blue */
+    }
+
+    .topInfo p {
+        width: 80%;
+    }
+}
+
+/* Tablet Devices (601px - 1000px) */
+@media all and (min-width: 601px) and (max-width: 1000px) {
+    .blog {
+        background-color: transparent;
+        height: auto;
+        margin-bottom: 4rem;
+        /* Added margin from bottom */
+        padding: 2rem 0;
+    }
+
+    .postsWrapper {
+        justify-content: center;
+        gap: 2rem;
+    }
+
+    .topInfo h2 {
+        color: rgb(3, 3, 82);
+    }
+}

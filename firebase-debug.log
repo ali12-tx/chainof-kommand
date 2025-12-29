@@ -1,0 +1,48 @@
+[debug] [2025-12-19T06:48:33.590Z] ----------------------------------------------------------------------
+[debug] [2025-12-19T06:48:33.593Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\HP\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2025-12-19T06:48:33.593Z] CLI Version:   14.27.0
+[debug] [2025-12-19T06:48:33.593Z] Platform:      win32
+[debug] [2025-12-19T06:48:33.594Z] Node Version:  v24.11.1
+[debug] [2025-12-19T06:48:33.594Z] Time:          Fri Dec 19 2025 11:48:33 GMT+0500 (Pakistan Standard Time)
+[debug] [2025-12-19T06:48:33.594Z] ----------------------------------------------------------------------
+[debug] 
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  C:\Users\HP\Documents\GitHub\chain-of-kommand-web
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] 
+[debug] [2025-12-19T06:48:47.578Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2025-12-19T06:48:47.579Z] > authorizing via signed-in user (areesha.umer@txdynamics.io)
+[debug] [2025-12-19T06:48:47.581Z] Checked if tokens are valid: true, expires at: 1766130205445
+[debug] [2025-12-19T06:48:47.581Z] Checked if tokens are valid: true, expires at: 1766130205445
+[debug] [2025-12-19T06:48:47.583Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/chain-of-ko-mmmand [none]
+[debug] [2025-12-19T06:48:48.410Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/chain-of-ko-mmmand 200
+[debug] [2025-12-19T06:48:48.411Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/chain-of-ko-mmmand {"projectId":"chain-of-ko-mmmand","projectNumber":"17247090478","displayName":"Chain of ko mmmand","name":"projects/chain-of-ko-mmmand","resources":{"hostingSite":"chain-of-ko-mmmand"},"state":"ACTIVE","etag":"1_616b818a-47ac-493e-bbc5-f6b5286a5268"}
+[info] i  Using project chain-of-ko-mmmand (Chain of ko mmmand) . 
+[info] 
+=== Hosting Setup
+[debug] [2025-12-19T06:48:48.437Z] Checked if tokens are valid: true, expires at: 1766130205445
+[debug] [2025-12-19T06:48:48.437Z] Checked if tokens are valid: true, expires at: 1766130205445
+[debug] [2025-12-19T06:48:48.438Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/chain-of-ko-mmmand [none]
+[debug] [2025-12-19T06:48:48.853Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/chain-of-ko-mmmand 200
+[debug] [2025-12-19T06:48:48.854Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/chain-of-ko-mmmand {"projectId":"chain-of-ko-mmmand","projectNumber":"17247090478","displayName":"Chain of ko mmmand","name":"projects/chain-of-ko-mmmand","resources":{"hostingSite":"chain-of-ko-mmmand"},"state":"ACTIVE","etag":"1_616b818a-47ac-493e-bbc5-f6b5286a5268"}
+[info] 
+[info] Your public directory is the folder (relative to your project directory) that
+[info] will contain Hosting assets to be uploaded with firebase deploy. If you
+[info] have a build process for your assets, use your build's output directory.
+[info] 
+[debug] [2025-12-19T06:49:20.215Z] >>> [apiv2][query] GET https://www.gstatic.com/firebasejs/releases.json [none]
+[debug] [2025-12-19T06:49:20.686Z] <<< [apiv2][status] GET https://www.gstatic.com/firebasejs/releases.json 200
+[debug] [2025-12-19T06:49:20.687Z] <<< [apiv2][body] GET https://www.gstatic.com/firebasejs/releases.json {"current":{"version":"12.7.0","browserURL":"https://www.gstatic.com/firebasejs/12.7.0/firebase.js","packageURL":"https://www.gstatic.com/firebasejs/12.7.0/firebase.tgz"},"live":{"version":"12.7","browserURL":"https://www.gstatic.com/firebasejs/live/12.7/firebase.js","packageURL":"https://www.gstatic.com/firebasejs/live/12.7/firebase.tgz"},"components":{"ai":"https://www.gstatic.com/firebasejs/12.7.0/firebase-ai.js","analytics":"https://www.gstatic.com/firebasejs/12.7.0/firebase-analytics.js","app":"https://www.gstatic.com/firebasejs/12.7.0/firebase-app.js","app-check":"https://www.gstatic.com/firebasejs/12.7.0/firebase-app-check.js","auth":"https://www.gstatic.com/firebasejs/12.7.0/firebase-auth.js","auth/cordova":"https://www.gstatic.com/firebasejs/12.7.0/firebase-auth/cordova.js","auth/web-extension":"https://www.gstatic.com/firebasejs/12.7.0/firebase-auth/web-extension.js","functions":"https://www.gstatic.com/firebasejs/12.7.0/firebase-functions.js","firestore":"https://www.gstatic.com/firebasejs/12.7.0/firebase-firestore.js","firestore/lite":"https://www.gstatic.com/firebasejs/12.7.0/firebase-firestore/lite.js","installations":"https://www.gstatic.com/firebasejs/12.7.0/firebase-installations.js","storage":"https://www.gstatic.com/firebasejs/12.7.0/firebase-storage.js","performance":"https://www.gstatic.com/firebasejs/12.7.0/firebase-performance.js","remote-config":"https://www.gstatic.com/firebasejs/12.7.0/firebase-remote-config.js","messaging":"https://www.gstatic.com/firebasejs/12.7.0/firebase-messaging.js","messaging/sw":"https://www.gstatic.com/firebasejs/12.7.0/firebase-messaging/sw.js","database":"https://www.gstatic.com/firebasejs/12.7.0/firebase-database.js","data-connect":"https://www.gstatic.com/firebasejs/12.7.0/firebase-data-connect.js","firestore.memory":"https://www.gstatic.com/firebasejs/12.7.0/firebase-firestore.memory.js"}}

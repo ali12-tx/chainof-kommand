@@ -1,0 +1,101 @@
+/* Mobile Devices (max-width: 600px) */
+@media all and (max-width: 600px) {
+    .footerHead {
+        height: auto;
+        background: transparent;
+        /* Removed pink background */
+        align-items: center;
+        justify-content: center;
+        padding: 0 1rem 1rem 1rem;
+        gap: 1rem;
+        margin-top: 0;
+    }
+
+    .footer {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 0.75rem;
+    }
+
+    .footer {
+        margin-top: 1rem;
+        width: 100%;
+    }
+
+    .leftContent {
+        order: 1;
+        /* Copyright first */
+        text-align: center;
+    }
+
+    .leftContent p {
+        font-size: .8rem;
+        color: black;
+        /* Changed to black for visibility */
+        text-align: center;
+    }
+
+    .rigthContent {
+        order: 2;
+        /* Links below */
+        flex-direction: column;
+        align-items: center;
+        gap: 0.5rem;
+    }
+
+    .rigthContent p {
+        font-size: .9rem;
+        margin: 0;
+    }
+
+    .rigthContent a {
+        margin-left: 0 !important;
+        /* Override inline style */
+    }
+}
+
+/* Tablet Devices (601px - 1000px) */
+@media all and (min-width: 601px) and (max-width: 1000px) {
+    .footerHead {
+        height: auto;
+        min-height: 150px;
+        background: transparent;
+        justify-content: center;
+        align-items: center;
+        padding: 0 2rem 1rem 2rem;
+        margin-top: 0;
+        /* Ensure gap from upper container */
+        gap: 1.5rem;
+    }
+
+    .footer {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    .leftContent {
+        order: 1;
+        /* Move copyright to top */
+        text-align: center;
+    }
+
+    .leftContent p {
+        font-size: 0.9rem;
+        color: black;
+    }
+
+    .rigthContent {
+        order: 2;
+        /* Move links to bottom */
+        justify-content: center;
+        gap: 2rem;
+    }
+
+    .rigthContent p {
+        font-size: 1rem;
+        margin: 0;
+    }
+}
