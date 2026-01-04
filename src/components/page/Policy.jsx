@@ -132,11 +132,11 @@ export const Policy = () => {
                             <div className="section-number white-theme">6</div>
                             <h2 className="section-title" style={{ color: 'white' }}>Contact Us</h2>
                             <div className="w-full" style={{ display: 'flex', flexDirection: 'column', gap: '1rem' }}>
-                                <a href="mailto:privacy@chainofko-mmand.com" className="link">
+                                <a href="mailto:support@chainofko-mmand.com" className="link">
                                     <svg width="20" height="20" className="icon" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg>
-                                    <span style={{ fontWeight: 500 }}>privacy@chainofko-mmand.com</span>
+                                    <span style={{ fontWeight: 500 }}>support@chainofko-mmand.com</span>
                                 </a>
-                                <a href="http://www.chainofko-mmand.com/data-request" className="link">
+                                <a href="https://www.chainofko-mmand.com/" className="link">
                                     <svg width="20" height="20" className="icon" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path></svg>
                                     <span style={{ fontWeight: 500 }}>Data Request Form</span>
                                 </a>

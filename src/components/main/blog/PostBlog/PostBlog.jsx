@@ -2,10 +2,20 @@ import './PostBlogStyles.css'
 import './ResponsiveBlogCard.css'
 
 export const PostBlog = (props) => {
+    const ImageContent = () => (
+        <img src={props.src} alt={props.alt} className='imgQrcode' />
+    );
+
     return (
         <div className="PostBlog">
             <div className="topBlog">
-                <img src={props.src} alt={props.alt} className='imgQrcode' />
+                {props.href ? (
+                    <a href={props.href} target="_blank" rel="noopener noreferrer">
+                        <ImageContent />
+                    </a>
+                ) : (
+                    <ImageContent />
+                )}
             </div>
             {/* <div className="middleBlog">
                 <h2>{props.title}</h2>
