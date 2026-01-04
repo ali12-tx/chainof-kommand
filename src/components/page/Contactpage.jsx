@@ -23,7 +23,7 @@ export const Contactpage = () => {
                             </div>
                             <h3 style={{ fontWeight: 700, color: '#111827', marginBottom: '0.5rem' }}>Email Us</h3>
                             <p style={{ color: '#6b7280', fontSize: '0.875rem', marginBottom: '1rem' }}>For general inquiries and support</p>
-                            <a href="mailto:privacy@chainofko-mmand.com" style={{ color: '#db2777', fontWeight: 500, fontSize: '0.875rem', textDecoration: 'none' }}>privacy@chainofko-mmand.com</a>
+                            <a href="mailto:support@chainofko-mmand.com" style={{ color: '#db2777', fontWeight: 500, fontSize: '0.875rem', textDecoration: 'none' }}>support@chainofko-mmand.com</a>
                         </div>
 
                         <div className="card gradient-card" style={{ marginBottom: 0, padding: '2rem', textAlign: 'center' }}>
@@ -40,26 +40,44 @@ export const Contactpage = () => {
 
                             <h2 className="section-title" style={{ textAlign: 'left', marginBottom: '1.5rem' }}>Send us a Message</h2>
 
-                            <form>
+                            <form onSubmit={(e) => {
+                                e.preventDefault();
+                                const form = e.currentTarget;
+                                const data = new FormData(form);
+                                const firstName = String(data.get('firstName') || '').trim();
+                                const lastName = String(data.get('lastName') || '').trim();
+                                const email = String(data.get('email') || '').trim();
+                                const subjectSel = String(data.get('subject') || 'General Inquiry').trim();
+                                const message = String(data.get('message') || '').trim();
+                                const subject = encodeURIComponent(`[${subjectSel}] Message from ${firstName} ${lastName}`);
+                                const bodyLines = [
+                                    `Name: ${firstName} ${lastName}`,
+                                    `Email: ${email}`,
+                                    '',
+                                    message
+                                ].join('\n');
+                                const body = encodeURIComponent(bodyLines);
+                                window.location.href = `mailto:areeshaumar44@gmail.com?subject=${subject}&body=${body}`;
+                            }}>
                                 <div className="grid-2" style={{ marginBottom: '1.5rem' }}>
                                     <div className="form-group" style={{ marginBottom: 0 }}>
                                         <label htmlFor="firstName" className="form-label">First Name</label>
-                                        <input type="text" id="firstName" className="form-input" placeholder="John" />
+                                        <input type="text" id="firstName" name="firstName" className="form-input" placeholder="John" required />
                                     </div>
                                     <div className="form-group" style={{ marginBottom: 0 }}>
                                         <label htmlFor="lastName" className="form-label">Last Name</label>
-                                        <input type="text" id="lastName" className="form-input" placeholder="Doe" />
+                                        <input type="text" id="lastName" name="lastName" className="form-input" placeholder="Doe" required />
                                     </div>
                                 </div>
 
                                 <div className="form-group">
                                     <label htmlFor="email" className="form-label">Email Address</label>
-                                    <input type="email" id="email" className="form-input" placeholder="john@example.com" />
+                                    <input type="email" id="email" name="email" className="form-input" placeholder="john@example.com" required />
                                 </div>
 
                                 <div className="form-group">
                                     <label htmlFor="subject" className="form-label">Subject</label>
-                                    <select id="subject" className="form-select">
+                                    <select id="subject" name="subject" className="form-select">
                                         <option>General Inquiry</option>
                                         <option>Support Request</option>
                                         <option>Feedback</option>
@@ -69,7 +87,7 @@ export const Contactpage = () => {
 
                                 <div className="form-group">
                                     <label htmlFor="message" className="form-label">Message</label>
-                                    <textarea id="message" rows="4" className="form-textarea" placeholder="How can we help you?"></textarea>
+                                    <textarea id="message" name="message" rows="4" className="form-textarea" placeholder="How can we help you?" required></textarea>
                                 </div>
 
                                 <button type="submit" className="submit-btn">

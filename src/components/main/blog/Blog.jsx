@@ -23,6 +23,7 @@ export const Blog = () => {
             alt="alimento1"
             title="Android QR Code"
             profile={androidstore}
+            href="https://play.google.com/store/apps/details?id=com.txdynamics.chainOfKOmmand&pcampaignid=web_share"
           />
 
           <PostBlog
@@ -30,6 +31,7 @@ export const Blog = () => {
             alt="alimento2"
             title="Apple QR Code"
             profile={appstore}
+            href="https://apps.apple.com/pk/app/chain-of-ko-mmand/id6737414029"
           />
         </div>
       </div>
